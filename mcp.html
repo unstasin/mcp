@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronic Pain Study Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional custom styles if necessary */
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-2xl font-bold">Elevated Dementia Risk and Cognitive Decline in Multisite Chronic Pain</h1>
+        <p>Wenhui Zhao, Lei Zhao, Xiangyu Chang, Xuejing Lu, Yiheng Tu</p>
+    </header>
+    <main class="p-4">
+        <section id="summary" class="mb-8">
+            <h2 class="text-xl font-semibold mb-2">Summary</h2>
+            <p>Nearly half of chronic pain patients report pain at multiple anatomical locations, referred to as multisite chronic pain (MCP)...</p>
+        </section>
+        <section id="statistics" class="mb-8">
+            <h2 class="text-xl font-semibold mb-2">Key Statistics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white p-4 shadow rounded">
+                    <h3 class="text-lg font-semibold">Dementia Risk</h3>
+                    <p>Individuals with MCP had a 1.36-fold higher risk of dementia compared to pain-free controls.</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded">
+                    <h3 class="text-lg font-semibold">Cognitive Decline</h3>
+                    <p>Accelerated cognitive decline was observed in individuals with MCP compared to those with single-site chronic pain (SCP) and pain-free individuals.</p>
+                </div>
+                <div class="bg-white p-4 shadow rounded">
+                    <h3 class="text-lg font-semibold">Hippocampal Atrophy</h3>
+                    <p>Significant atrophy in the hippocampus was noted in MCP patients, correlating with increased dementia risk.</p>
+                </div>
+            </div>
+        </section>
+        <section id="charts" class="mb-8">
+            <h2 class="text-xl font-semibold mb-2">Interactive Charts</h2>
+            <div id="chart1" class="bg-white p-4 shadow rounded mb-4">
+                <h3 class="text-lg font-semibold">Dementia Risk by Pain Site</h3>
+                <canvas id="dementiaRiskChart"></canvas>
+            </div>
+            <div id="chart2" class="bg-white p-4 shadow rounded mb-4">
+                <h3 class="text-lg font-semibold">Cognitive Decline over Time</h3>
+                <canvas id="cognitiveDeclineChart"></canvas>
+            </div>
+            <div id="chart3" class="bg-white p-4 shadow rounded mb-4">
+                <h3 class="text-lg font-semibold">Hippocampal Volume Loss</h3>
+                <canvas id="hippocampalVolumeChart"></canvas>
+            </div>
+        </section>
+        <section id="conclusion" class="mb-8">
+            <h2 class="text-xl font-semibold mb-2">Conclusion</h2>
+            <p>Our findings highlight the excessive burdens of MCP on patients’ cognition and brain and suggest a need to account for the overlapping nature of pain conditions in future studies...</p>
+        </section>
+    </main>
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        <p>&copy; 2023 Study on Chronic Pain and Cognitive Decline</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
